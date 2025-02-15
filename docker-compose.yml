@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  resource-usage-web-page:
+    build: .
+    container_name: resource-usage-web-page
+    hostname: resource-usage-web-page
+    networks:
+      - resource-usage-web-page-network
+    ports:
+      - 5000:5000
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+networks:
+  resource-usage-web-page-network:
+    driver: bridge
+    name: resource-usage-web-page-network
