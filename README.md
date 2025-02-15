@@ -40,10 +40,14 @@ If you encounter a permission error, make sure to give the script execution perm
 ```bash
 chmod +x script.sh
 ```
+### Viewing the Application
+Once the script is running, the application should be visible in your browser at:
+```
+http://<your-ip>:5000
+```
 ### Notes
 - **Platform Compatibility:** Both scripts are designed to work on Unix-like systems. Ensure you have the required interpreters installed (Python 3 for `script.py` and Bash for `script.sh`).
 - **Dependencies:** No additional packages are required; both scripts utilize built-in commands and modules.
-
 
 ---
 
