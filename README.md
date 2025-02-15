@@ -1,6 +1,7 @@
 # Resource Usage Web Page  
 A simple web page to monitor your system's resource usage.  
 
+
 ---
 
 ## Features 🌟  
@@ -10,6 +11,39 @@ A simple web page to monitor your system's resource usage.
   - Application CPU/RAM usage.  
   - System-wide CPU/RAM usage.  
 - **Always Visible**: A "Hello World!" header stays fixed at the top.  
+
+---
+
+## Installation and Usage
+
+Follow these simple steps to get started:
+
+### Clone the Repository and Navigate to the Directory
+Open your terminal and run the following command:
+
+```bash
+git clone https://github.com/hambn/resource-usage-web-page.git ./resource-usage-web-page && cd ./resource-usage-web-page
+```
+
+### Run the Scripts
+You can run either the Python or the Bash script, depending on your preference.
+
+**To run the Python script:**
+```bash
+python3 script.py
+```
+**To run the Bash script:**
+```bash
+./script.sh
+```
+If you encounter a permission error, make sure to give the script execution permission:
+```bash
+chmod +x script.sh
+```
+### Notes
+- **Platform Compatibility:** Both scripts are designed to work on Unix-like systems. Ensure you have the required interpreters installed (Python 3 for `script.py` and Bash for `script.sh`).
+- **Dependencies:** No additional packages are required; both scripts utilize built-in commands and modules.
+
 
 ---
 
